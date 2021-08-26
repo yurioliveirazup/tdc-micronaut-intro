@@ -16,9 +16,9 @@ class PizzaControllerTest {
     @Test
     void testPizza() {
 
-        Pizza pizza = client.pegaPizzaPor("calabresa");
+        Pizza pizza = client.pegaPizzaPor(2L);
 
         assertEquals("Calabresa", pizza.getSabor());
-        assertEquals(20.0, pizza.getPreco());
+        assertEquals(22.0, pizza.getPreco());
     }
 }

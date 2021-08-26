@@ -12,9 +12,9 @@ public class PizzaController {
         this.service = service;
     }
 
-    @Get("/{sabor}")
-    public Pizza pegaPizzaPor(String sabor) {
+    @Get("/{id}")
+    public Pizza pegaPizzaPor(Long id) {
 
-        return service.buscaPizzaPor(sabor);
+        return service.buscaPizzaPor(id);
     }
 }

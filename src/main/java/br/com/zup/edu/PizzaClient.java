@@ -6,6 +6,6 @@ import io.micronaut.http.client.annotation.Client;
 @Client("/pizzas")
 public interface PizzaClient {
 
-    @Get("/{sabor}")
-    Pizza pegaPizzaPor(String sabor);
+    @Get("/{id}")
+    Pizza pegaPizzaPor(Long id);
 }
